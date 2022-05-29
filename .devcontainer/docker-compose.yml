@@ -1,0 +1,10 @@
+version: '3'
+services:
+  develop:
+    restart: always
+    build: .
+    container_name: 'develop'
+    working_dir: '/home/src'
+    tty: true
+    volumes:
+      - ${SRC_PATH}:/home/src
