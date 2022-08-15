@@ -1,1 +1,2 @@
 alias start="python -m skill_simulator"
+alias ll="ls -l"

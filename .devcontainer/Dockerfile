@@ -1,5 +1,9 @@
 FROM ruby:3.1.2
 
+# set alias
+COPY ./.alias /root
+RUN cat /root/.alias >> /root/.bashrc
+
 # set env
 ARG homeDir="/home/src"
 
