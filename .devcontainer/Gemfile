@@ -1,0 +1,8 @@
+source 'https://rubygems.org'
+# rails
+# ~> 5.2.4   = 5.2.4以上で利用可能で、5.2.9などは問題なく、5.3にバージョンが上がるとNG
+# >= 5.2.4.2 = 5.2.4.2以上のバージョンが必要
+# = 5.2.4.2 < version < 5.2.9.9
+gem 'rails', '~> 5.2.4', '>= 5.2.4.2'
+# scraping tools
+gem 'mechanize'
