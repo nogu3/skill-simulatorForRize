@@ -1,5 +1,9 @@
 {
     "dockerComposeFile":"docker-compose.yml",
     "service": "develop",
-    "workspaceFolder":"/home/src"
+    "workspaceFolder":"/home/src",
+    "extensions": [
+		"rebornix.ruby",
+		"castwide.solargraph"
+	]
 }

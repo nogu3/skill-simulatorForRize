@@ -4,5 +4,16 @@ source 'https://rubygems.org'
 # >= 5.2.4.2 = 5.2.4.2以上のバージョンが必要
 # = 5.2.4.2 < version < 5.2.9.9
 gem 'rails', '~> 5.2.4', '>= 5.2.4.2'
+
 # scraping tools
 gem 'mechanize'
+
+# 補完用
+gem 'solargraph'
+
+# 文法チェック
+gem 'ruby-lint'
+
+# デバッグ用
+gem 'debase', '0.2.5.beta2'
+gem 'ruby-debug-ide', '0.7.3'
