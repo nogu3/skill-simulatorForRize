@@ -1,9 +1,24 @@
 {
-    "dockerComposeFile":"docker-compose.yml",
+    "dockerComposeFile": "docker-compose.yml",
     "service": "develop",
-    "workspaceFolder":"/home/src",
+    "workspaceFolder": "/home/src",
     "extensions": [
-		"rebornix.ruby",
-		"castwide.solargraph"
-	]
+        "rebornix.ruby",
+        "castwide.solargraph"
+    ],
+    // コンテナ内に追加するVS Codeの設定
+    "settings": {
+        "ruby.lint": {
+            "ruby": {
+                "unicode": true
+            }
+        },
+        "ruby.useBundler": true,
+        "ruby.intellisense": "rubyLocate",
+        "solargraph.commandPath": "/usr/local/bundle/bin/solargraph",
+        "editor.defaultFormatter": "castwide.solargraph",
+        "solargraph.formatting": true,
+        "solargraph.diagnostics": true,
+        "solargraph.hover": true
+    }
 }

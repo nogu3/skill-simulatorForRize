@@ -7,4 +7,7 @@ services:
     working_dir: '/home/src'
     tty: true
     volumes:
+      - bundle:/usr/local/bundle
       - ${SRC_PATH}:/home/src
+volumes:
+  bundle:

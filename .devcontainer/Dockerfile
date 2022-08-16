@@ -21,3 +21,4 @@ COPY Gemfile ${homeDir}/Gemfile
 COPY Gemfile.lock ${homeDir}/Gemfile.lock
 
 RUN bundle install
+RUN bundle exec yard gems
