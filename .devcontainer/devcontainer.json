@@ -17,8 +17,12 @@
         "ruby.intellisense": "rubyLocate",
         "solargraph.commandPath": "/usr/local/bundle/bin/solargraph",
         "editor.defaultFormatter": "castwide.solargraph",
-        "solargraph.formatting": true,
+        // コードナビゲーションの機能を有効にする設定です。
+        "solargraph.definitions": true,
+        // コード診断(lint)を有効にする設定です。 .solargraph.yml で reporters に設定した tool が使用されます。
         "solargraph.diagnostics": true,
+        // コードの自動修正を有効にする設定です。 rubocop でコードの指摘がある状態で該当ファイルを保存したときに、機械的に修正可能な指摘点を自動で修正した上で保存するようになります。
+        "solargraph.formatting": true,
         "solargraph.hover": true
     }
 }
